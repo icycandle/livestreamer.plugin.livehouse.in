@@ -17,7 +17,7 @@ class LiveHouse(Plugin):
         url_match = _url_re.match(self.url)
         if url_match:
             _id = url_match.group(1)
-            url = 'https://hi.cdn.livehouse.in/%s/video/playlist.m3u8' % (_id)
+            url = 'https://rtctw-rtcp-tw-1.livehouse.in/%s/video/playlist.m3u8' % (_id)
             streams = HLSStream.parse_variant_playlist(self.session, url)
             return streams
         else:
