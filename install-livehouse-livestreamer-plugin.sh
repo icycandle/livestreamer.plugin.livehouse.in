@@ -1,7 +1,7 @@
 if [ -z "$XDG_CONFIG_HOME" ]
 then
 echo "\$XDG_CONFIG_HOME is empty"
-XDG_CONFIG_HOME='~/.config'
+XDG_CONFIG_HOME=$HOME'/.config'
 else
 echo "\$XDG_CONFIG_HOME is NOT empty"
 fi
