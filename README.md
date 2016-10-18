@@ -12,4 +12,4 @@ or (only if the above gives you "access denied" errors)
 http://apple.stackexchange.com/questions/179491/how-to-install-livestreamer-super-n00b-terminal-question
 
 ## install livehouse plugin
-`bash <(curl -s http://wearetags.com/install-livehouse-livestreamer-plugin.sh)`
+`bash <(curl -s https://raw.githubusercontent.com/icycandle/livestreamer.plugin.livehouse.in/master/install-livehouse-livestreamer-plugin.sh)`
