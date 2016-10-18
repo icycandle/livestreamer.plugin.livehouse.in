@@ -6,7 +6,6 @@ from livestreamer.stream import HLSStream
 print("livehouse.py plugin is loading.")
 
 regex_pattern = r"livehouse.in/channel/(\w+)"
-_url_re = re.compile(regex_pattern, re.IGNORECASE)
 
 class LiveHouse(Plugin):
     @classmethod
@@ -19,7 +18,7 @@ class LiveHouse(Plugin):
         if match:
             _id = match[0]
             url = 'https://rtctw-rtcp-tw-1.livehouse.in/{id}/video/playlist.m3u8'.format(
-            	id=_id)
+                id=_id)
             streams = HLSStream.parse_variant_playlist(self.session, url)
             return streams
         else:
