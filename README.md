@@ -4,7 +4,9 @@ livestreamer plugin for livehouse.in and cavetube
 ## install livestreamer
 run
 `easy_install -U livestreamer`
+
 or (only if the above gives you "access denied" errors)
+
 `sudo easy_install -U livestreamer`
 
 http://apple.stackexchange.com/questions/179491/how-to-install-livestreamer-super-n00b-terminal-question
