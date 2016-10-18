@@ -6,5 +6,5 @@ else
 echo "\$XDG_CONFIG_HOME is NOT empty"
 fi
 
-plugin_dir = $XDG_CONFIG_HOME+'/livestreamer/plugins'
+plugin_dir=$XDG_CONFIG_HOME'/livestreamer/plugins'
 mkdir -p $plugin_dir
