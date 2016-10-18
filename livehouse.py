@@ -3,18 +3,21 @@ from livestreamer import StreamError
 from livestreamer.plugin import Plugin
 from livestreamer.stream import HLSStream
 
-_url_re = re.compile(r"livehouse.in/channel/(\w+)")
+print("livehouse.py plugin is loading.")
+
+regex_pattern = r"livehouse.in/channel/(\w+)"
+_url_re = re.compile(regex_pattern, re.IGNORECASE)
 
 class LiveHouse(Plugin):
     @classmethod
     def can_handle_url(cls, url):
-        match = _url_re.match(url)
+        match = re.findall(regex_pattern, url)
         return match
 
     def _get_streams(self):
-        url_match = _url_re.match(self.url)
-        if url_match:
-            _id = url_match.group(1)
+        match = re.findall(regex_pattern, self.url)
+        if match:
+            _id = match[0]
             url = 'https://rtctw-rtcp-tw-1.livehouse.in/{id}/video/playlist.m3u8'.format(
             	id=_id)
             streams = HLSStream.parse_variant_playlist(self.session, url)
