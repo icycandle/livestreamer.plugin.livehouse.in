@@ -17,3 +17,7 @@ bash <(curl -s https://raw.githubusercontent.com/icycandle/livestreamer.plugin.l
 ## suggest player
 ### VLC
 http://www.videolan.org/vlc/
+
+## Usage
+`livestreamer livehouse.in/channel/470701 best`
+
