@@ -1,8 +1,13 @@
 # livestreamer.plugin.livehouse.in
 livestreamer plugin for livehouse.in and cavetube
 
-需要原始的 livestreamer source, 至 https://github.com/chrippa/livestreamer 下載。
+## install livestreamer
+run
+`easy_install -U livestreamer`
+or (only if the above gives you "access denied" errors)
+`sudo easy_install -U livestreamer`
 
-把 livehouse.py 與 cavetube.py 放置到 livestreamer\plugins\ 裡 (例如: c:\Python27\Lib\site-packages\livestreamer-1.xx.x-py2.7.egg\livestreamer\plugins\)
+http://apple.stackexchange.com/questions/179491/how-to-install-livestreamer-super-n00b-terminal-question
 
-註: 只有Live的有效
+## install livehouse plugin
+`bash <(curl -s http://wearetags.com/install-livehouse-livestreamer-plugin.sh)`
