@@ -22,6 +22,6 @@ class LiveHouse(Plugin):
             streams = HLSStream.parse_variant_playlist(self.session, url)
             return streams
         else:
-            raise StreamError("Error open playlist, maybe it's not live stream ")         
-            
+            raise StreamError("Error open playlist, maybe it's not live stream ")
+
 __plugin__ = LiveHouse
