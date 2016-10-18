@@ -6,5 +6,7 @@ else
 echo "\$XDG_CONFIG_HOME is NOT empty"
 fi
 
-plugin_dir=$XDG_CONFIG_HOME'/livestreamer/plugins'
-mkdir -p $plugin_dir
+plugin_dir=$XDG_CONFIG_HOME'/livestreamer/plugins';
+mkdir -p $plugin_dir;
+cd $plugin_dir;
+curl -O 'https://raw.githubusercontent.com/icycandle/livestreamer.plugin.livehouse.in/master/livehouse.py'
